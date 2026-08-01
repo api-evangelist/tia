@@ -1,7 +1,24 @@
 aid: tia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tia.png
 name: Tia
-description: Tia is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Tia is a women's healthcare company that operates in-person clinics and a
+  virtual care platform, bringing primary care, gynecology, mental health, and wellness
+  services into one connected care experience. Founded in 2017 and backed by Canaan
+  Partners, Tia runs clinics in New York, Los Angeles, San Francisco, and Phoenix, offers
+  virtual visits across multiple states, and partners with health systems. Tia is a
+  consumer healthcare provider and does not publish a public developer portal, API
+  documentation, or client SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/tia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +27,49 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Womens Health
+- Primary Care
+- Gynecology
+- Telehealth
+- Mental Health
 apis: []
+common:
+- type: DomainSecurity
+  url: security/tia-domain-security.yml
+- type: Website
+  name: Tia Website
+  url: https://asktia.com/
+- type: GitHubOrganization
+  name: Tia on GitHub (AskTia)
+  url: https://github.com/AskTia
+- type: PrivacyPolicy
+  name: Privacy Policy
+  url: https://asktia.com/privacy-policy/
+- type: TermsOfService
+  name: Terms of Use
+  url: https://asktia.com/terms-of-use/
+- type: SignUp
+  name: Member Sign Up
+  url: https://member.asktia.com/signup/
+- type: Login
+  name: Member Portal
+  url: https://member.asktia.com/
+- type: Support
+  name: Contact Tia
+  url: https://asktia.com/contact/
+- type: LLMsTxt
+  name: llms.txt
+  url: llms/tia-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

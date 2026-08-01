@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of asktia.com + member.asktia.com
+host: https://asktia.com
+note: asktia.com serves a catch-all redirect (302 -> /404) for unknown paths, so
+  followed-redirect responses return 200 HTML for any path. Statuses below were
+  recorded WITHOUT following redirects; none of the well-known discovery documents
+  are published. No raw files were saved.
+documents:
+- path: /.well-known/security.txt
+  status: 302 -> /404
+  present: false
+- path: /.well-known/openid-configuration
+  status: 301 -> trailing slash -> 404
+  present: false
+- path: /.well-known/oauth-authorization-server
+  status: 301 -> trailing slash -> 404
+  present: false
+- path: /.well-known/api-catalog
+  status: 301 -> trailing slash -> 404
+  present: false
+- path: /.well-known/ai-plugin.json
+  status: 302 -> /404
+  present: false
+- path: /llms.txt
+  status: 302 -> /404
+  present: false
+member_host: https://member.asktia.com
+member_documents:
+- path: /.well-known/security.txt
+  status: 302 -> /r/login (auth-gated)
+  present: false
