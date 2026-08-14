@@ -12,13 +12,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tia.png
 name: Tia
-description: Tia is a women's healthcare company that operates in-person clinics and a
-  virtual care platform, bringing primary care, gynecology, mental health, and wellness
-  services into one connected care experience. Founded in 2017 and backed by Canaan
-  Partners, Tia runs clinics in New York, Los Angeles, San Francisco, and Phoenix, offers
-  virtual visits across multiple states, and partners with health systems. Tia is a
-  consumer healthcare provider and does not publish a public developer portal, API
-  documentation, or client SDKs.
+description: Tia is a women's healthcare company that operates in-person clinics and a virtual care platform,
+  bringing primary care, gynecology, mental health, and wellness services into one connected care experience.
+  Founded in 2017 and backed by Canaan Partners, Tia runs clinics in New York, Los Angeles, San Francisco,
+  and Phoenix, offers virtual visits across multiple states, and partners with health systems. Tia is
+  a consumer healthcare provider and does not publish a public developer portal, API documentation, or
+  client SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/tia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -70,6 +69,22 @@ common:
 - type: LLMsTxt
   name: llms.txt
   url: llms/tia-llms.txt
+- type: DomainSecurity
+  url: security/tia-domain-security.yml
+- type: CareTeam
+  url: https://asktia.com/care-team/
+- type: Locations
+  url: https://asktia.com/locations/
+- type: Membership
+  url: https://asktia.com/membership/
+- type: Outcomes
+  url: https://asktia.com/article/2024-Outcomes-Report/
+- type: Careers
+  url: https://asktia.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/asktia/
+- type: DomainSecurity
+  url: security/tia-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
